@@ -29,4 +29,16 @@ test('inputs are visible', () => {
   getByLabelText(/notes/i);
 });
 
-test('form submit adds new animals to the list', () => {});
+test('form submit adds new animals to the list', () => {
+  const { getByLabelText, getByText, getByTestId } = render(<AnimalForm />);
+  // querying for all the input nodes
+  const speciesInput = getByLabelText(/species/i);
+  const ageInput = getByLabelText(/age/i);
+  const notesInput = getByLabelText(/notes/i);
+
+  // use the change event to add text to each input
+
+  // click on the button!
+
+  // assert that the species is added to the list
+});
