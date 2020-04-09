@@ -28,5 +28,5 @@ test('renders header', () => {
   // QUERY FUNCTIONS
   const linkElement = getByText(/add new animal/i); // case INSENSITIVE
   // EXPECTATIONS
-  expect(linkElement).toBeInTheDocument();
+  expect(linkElement).toBeVisible();
 });
